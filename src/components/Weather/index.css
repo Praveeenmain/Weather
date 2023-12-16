@@ -43,7 +43,22 @@ body {
   
   .dropdown-container {
     text-align: center;
-  }
+    color: white;
+    
+}
+.dropdown-container1 {
+  text-align: center;
+  color: white;
+  border: 1px solid #ccc;
+  background-color: #0284c7;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  width: 80%; 
+  max-width: 450px; 
+  margin: 0 auto; 
+  padding: 20px; 
+}
+
+
   
   select option:checked {
     background-color: #f0f0f0;
@@ -53,7 +68,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* You can adjust the height as needed */
+    height: 100vh;
   }
   @keyframes buttonAnim {
     0% {

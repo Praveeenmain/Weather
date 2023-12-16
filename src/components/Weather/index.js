@@ -107,10 +107,11 @@ const Weather = () => {
 
 
       {selectedCity  && (
-        <div className="dropdown-container">
+        <div className="dropdown-container1">
           <h2>Weather Details </h2>
           <p>Temperature: {Math.round(selectedCity.main.temp - 273.15)} °C</p>
           <p>Description: {selectedCity.weather[0].description}</p>
+          <p>WindSpeed: {Math.round(selectedCity.wind.speed)} km/hr</p>
         </div>
       )}
     </div>
