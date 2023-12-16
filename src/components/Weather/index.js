@@ -73,7 +73,7 @@ const Weather = () => {
   };
 
   return (
-    <div>
+    <div className="Weather-container">
       <h1>Weather App</h1>
       <form onSubmit={onSubmitCityname}>
         <input
