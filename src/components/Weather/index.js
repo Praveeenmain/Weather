@@ -20,7 +20,7 @@ const Weather = () => {
   const weatherDatas = async (city) => {
     try {
       setApistatus(apiStatusConstants.inProgress);
-      const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=10&appid=${apikey}`);
+      const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=10&appid=${apikey}`);
       const fetchedData = await response.json();
       console.log(fetchedData);
       if (fetchedData && fetchedData.length > 0) {
